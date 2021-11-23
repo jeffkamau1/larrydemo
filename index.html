@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>The Grafiti</title>
+    <style>
+    	html{
+    		font-family: 'Quicksand', sans-serif;
+    	}
+        header{
+        	background-color: #00796b;
+        	height: 100vh;
+        }
+        .femaleimage{
+        	margin-top:10%;
+        	width: 350px;
+        	height:450px;
+        	 background: url(img/female2.jpg);
+        	 background-position: center;
+        	 background-size: cover;
+        	 margin-left:20%;
+        	 
+        }
+        
+        #femaleid{
+        	width:200px;
+        	height:400px;
+
+        }
+        .welcometext{
+        	margin-top: 160px;
+        }
+        .socials{
+        	display: flex;
+        	justify-content: space-around;
+        }
+         .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    @media only screen and (max-width: 400px) {
+  .welcometext {
+    color:#00796b !important ;
+    margin-bottom: 120px;
+  }
+}
+ @media only screen and (max-width: 540px) {
+  .welcometext {
+    color:#00796b !important ;
+    margin-top: 270px;
+    margin-bottom: 70px;
+
+  }
+  .femaleimage{
+    margin-top: 30%;
+  }
+}
+    
+
+    </style>
+    
+</head>
+<body>
+    <!-- navbar  -->
+    <header  class="scrollspy" >
+        <nav class="nav-wrapper teal darken-2 z-depth-0" >
+            <div class="container scrollspy" id="myheader">
+              <a href="#" class="brand-logo">Grafiti logo</a>
+              <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down links">
+                
+                <li><a href="#about" style="font-size: 1.25rem">A little about Me!</a></li>
+                <li><a href="#services" style="font-size:1.25rem">What I do</a></li>
+                <li><a href="#gallery" style="font-size: 1.25rem">My work!</a></li>
+
+                <li><a href="#contacts">Contact Me!</a></li>
+
+              </ul>
+              <ul class="sidenav grey lighten-2" id="mobile-menu">
+                
+                <li><a href="#about">A little About Me</a></li>
+                <li><a href="#gallery">My Work!</a></li>
+                <li><a href="#services">What I do</a></li>
+                <li><a href="#contacts">Contact me!</a></li>
+
+              </ul>
+            </div>
+          </nav>
+          <div class="row container">
+          	<div class="col s12 m5 l6 femaleimage"></div>
+          	<div class="col s12 m5 l5 offset-l1">
+          		<h3 class=" welcometext white-text">Hey there, my name is Sofia Valdez I am
+          			 a grafiti artist.  Welcome to my world and feel free to explore it!
+          		</h3>
+          	</div>
+         	
+          </div>
+    </header>
+
+    <!-- About me -->
+    <section class="container section aboutme scrollspy" id="about">
+    	
+    	<div class="row">
+    		<div class="col s12 m6 l11">
+    			<h3 class="teal-text text-darken-2">A little about me!</h3>
+    			
+    			<p class="flow-text">I am an artist based in the United States and i am really passionate about grafitti. I started grafitti four years ago and ever since that moment i have never stopped,grafitti is my means of expression and for me one of my reasons for living ! My hope is that my art will help inspire people around me to be creative and do great things</p>
+    		</div>
+    	</div>  	
+    </section>
+
+     <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/spongebob.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  		<!-- services / tabs -->
+  		<section class="section container scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="teal-text text-darken-2">What I do..</h2>
+        <p>Hi there , welcome ! let me show you what i do</p>
+        <p>i focus on various art right here, so lets look around </p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <!-- tabs -->
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#potrait" class="active teal-text text-darken-3">Potrait</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#wallgrafiti" class="teal-text text-darken-3">Street Art</a>
+          </li>
+        </ul>
+        <div id="potrait" class="col s12">
+            <p class="flow-text teal-text text-darken-2">Potrait</p>
+            <p>Aside from grafiti I also do potratits for people, I assure high quality and finess.
+            I believe potraits are a great expression</p>
+            <p>Just contact us and book in adavance to get your potrait!</p>
+        </div>
+        <div id="wallgrafiti" class="col s12">
+            <p class="flow-text teal-text text-darken-2">Street Art</p>
+            <p>The streets are my canvas , and I major alot in street grafiti , I find it really cool, hope our feeling is mutual.</p>
+            <p>Wanna work with us to express your society in the streets , well there is no better way than street grafiti</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/sharks.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+  	
+
+  <!-- Gallery -->
+    <div class="row container section scrollspy" id="gallery">
+    	<h3 class="teal-text text-darken-2">My Work!</h3>
+    	<p>Here is some of work, what are you waiting for? Go ahead and tap one!</p>
+    	
+      <div class="col s12 m4 l4">
+      	<img src="img/world.jpg" class="responsive-img card materialboxed">
+      </div>
+      <div class="col s12 m4 l4">
+      	<img src="img/purple.jpg" class="responsive-img card materialboxed">
+      </div>
+      <div class="col s12 m4 l4">
+      	<img src="img/zombie.jpg" class="responsive-img card materialboxed">
+      </div>
+
+      <div class="col s12 m4 l4">
+      	<img src="img/rabbit.jpg" class=" responsive-img card materialboxed">
+      </div>
+      <div class="col s12 m4 l4">
+      	<img src="img/sharks.jpg" class="responsive-img card materialboxed">
+      </div>
+
+      <div class="col s12 m4 l4">
+      	<img src="img/garfield.jpg" class=" responsive-img card materialboxed">
+      </div>
+      
+    </div>
+
+    <footer class="page-footer teal darken-3 scrollspy" id="contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>Contact Me</h5>
+          <p>Like my stuff? then feel free to contact and reach out id love to hear from you</p>
+          <p>Also be sure to follow me on my socials and be posted on my latest art.</p>
+          <p>Email: sofiavaldez@gmail.com</p>
+          <p>Phone: 0713389761</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+             <li><a href="https://instagram.com" class="tooltipped btn-floating btn-small teal darken-3" data-position="right" data-tooltip="Instagram"> 
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          <li style="margin-top: 10px"><a href="https://facebook.com" class="tooltipped btn-floating btn-small teal darken-3" data-position="right" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a></li>
+          <li style="margin-top:10px "><a href="https://twitter.com" class="tooltipped btn-floating btn-small teal darken-3" data-position="right" data-tooltip="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a></li>
+
+          <li style="margin-top:10px "><a href="#myheader" class="scrollspy tooltipped btn-floating btn-small teal darken-3" data-position="right" data-tooltip="Back to top">
+            <i class="fa fa-arrow-up"></i>
+          </a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright teal darken-4">
+      <div class="container center-align">&copy; 2021 sofia valdez</div>
+    </div>
+  </footer>
+ 		
+     
+
+
+
+
+   
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+    <script>
+        $(document).ready(function(){
+    
+          $('.sidenav').sidenav();
+          $('.materialboxed').materialbox();
+          $('.parallax').parallax();
+          $('.tabs').tabs();
+          $('.slider').slider();
+          $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+            	
+            
+
+          
+    
+        });
+      </script>
+</body>
+</html>
